@@ -8,4 +8,4 @@
 6. drag and drop the `developer-portfolio.fig`
 7. Enjoy !!! 
 
-Live Preview link:  https://onik-howlader.github.io/portfolio-resources/
+Live Preview link:   https://onik-howlader.github.io/Portfolio-Resource/
