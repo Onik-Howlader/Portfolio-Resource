@@ -1,6 +1,7 @@
-/* *{
+*{
     margin: 0;
-} */
+    padding: 0;
+}
 .primary-font{
   font-family: "Open Sans", sans-serif;
     width: 400;
@@ -47,6 +48,7 @@ nav{
   align-items: center;
   justify-content: space-between;
   margin: 50px 200px;
+  margin-top: 0;
 }
 .nav-title{
   font-weight: 800;
@@ -167,9 +169,9 @@ footer{
   padding: 130px 200px;
 }
 .footer-column{
-  width: 80%;
+  width: 100%;
 }
-.contact input[type="text"], .contact input[type="email"], textarea{
+footer input[type="text"], footer input[type="email"], textarea{
   display: block;
   margin-bottom: 25px;
   padding: 18px 35px;
@@ -183,4 +185,53 @@ footer{
 
 .social-links a{
   margin-right: 25px;
+}
+
+/* Responsive media query */
+
+@media screen and (max-width:576px){
+  .skill-container, .resume-container, footer, .banner, nav, nav > ul{
+    flex-direction: column;
+  }
+    .resume-container{
+      padding: 10px;
+    }
+    footer{
+      padding: 30px;
+    }
+    .footer-column{
+      width: 100%;
+    }
+    footer input[type="text"],
+    footer input[type="email"], footer
+    textarea{
+      width: calc(100% - 60px);
+    }
+
+    .banner-profile-pic{
+      width: 100%;
+    }
+    .banner{
+      margin: 20px;
+    }
+    .btn{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .header{
+      background-image: none;
+    }
+        nav>ul{
+          gap: 10px;
+        }
+        .banner-content{
+          gap: 10px;
+        }
+    .about{
+      padding: 80px 30px;
+    }
+    .about-items{
+      flex-direction: column;
+    }
 }
